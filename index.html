@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry, My Love ❤️</title>
+<meta name="theme-color" content="#fff5f7">
+<style>
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:linear-gradient(135deg,#fff7f8,#ffecef,#fff);color:#3b2630;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:10}
+.heart{position:absolute;bottom:-40px;font-size:22px;animation:float 7s linear forwards;opacity:.75}
+@keyframes float{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:60px 20px}
+.card{max-width:900px;width:100%;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);border:1px solid rgba(160,70,95,.14);border-radius:30px;box-shadow:0 20px 70px rgba(100,40,60,.12);padding:45px 28px;text-align:center}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:#a85a70}
+h1{font-size:clamp(48px,11vw,92px);line-height:.95;margin:18px 0;color:#7d3049}
+h2{font-size:clamp(32px,6vw,52px);margin:10px 0 25px;color:#7d3049}
+p{font-size:19px;line-height:1.8}
+.sub{color:#795c66;max-width:650px;margin:0 auto 30px}
+.btn{border:0;border-radius:999px;padding:15px 28px;background:#8e3d58;color:white;box-shadow:0 10px 25px rgba(142,61,88,.2);margin:8px;transition:.25s}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.secondary{background:white;color:#8e3d58;border:1px solid #e8c3cd}
+#letter{display:none;margin:25px auto 0;max-width:680px;text-align:left;background:#fffafa;border-radius:20px;padding:25px;box-shadow:inset 0 0 0 1px #f3d9df}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+.gallery img{width:100%;height:330px;object-fit:cover;border-radius:20px;box-shadow:0 8px 25px rgba(70,20,35,.12)}
+.gallery img:first-child{grid-column:span 2;height:430px}
+.reason{display:inline-block;background:#fff0f3;padding:12px 18px;border-radius:999px;margin:6px;color:#81445a}
+.question{position:relative;min-height:170px}
+#noBtn{position:relative}
+#yesBtn{font-size:20px;padding:17px 35px}
+#final{display:none}
+.bigheart{font-size:75px;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+footer{padding:25px;text-align:center;color:#98717d;font-size:13px}
+@media(max-width:600px){.card{padding:35px 18px}.gallery{grid-template-columns:1fr}.gallery img,.gallery img:first-child{grid-column:auto;height:300px}.gallery img:first-child{height:360px}p{font-size:17px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+
+<section>
+<div class="card">
+<div class="kicker">A little something for you</div>
+<h1>heyyy love 🥹🥹</h1>
+<p class="sub">heyyy love🥹🥹<br>i’m sorry that i hurt today okay. i know i should’ve let you know that i was about to play with masi but i didnt. i know it’s my mistake about not letting you know🥹🥹<br>im really sorry about that</p><button class="btn" onclick="showLetter()">Read the rest 💌</button><button class="btn secondary" id="musicBtn" onclick="toggleMusic()">♪ Play Pluto Projector — Rex Orange County</button><audio id="music" src="pluto_projector.mp3" preload="auto"></audio>
+<div id="letter"><p>heyyy love🥹🥹</p><p>i’m sorry that i hurt today okay. i know i should’ve let you know that i was about to play with masi but i didnt. i know it’s my mistake about not letting you know🥹🥹</p><p>im really sorry about that</p><p>I can't promise I'll never make a mistake again, but I can promise that I'll listen, learn, and do better.</p><p>i love everything about you and i dont want you to be mad. i don't want one bad moment to erase all of that.</p><p><b>i'm sorry babyy, I love you. and I really hope you'll forgive me. ❤️</b></p></div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<div class="kicker">Some of my favourite yous</div>
+<h2>Look at you 🥹</h2>
+<div class="gallery">
+<img src="images/photo1.jpg" alt="A favorite photo">
+<img src="images/photo2.jpg" alt="A favorite photo">
+<img src="images/photo3.jpg" alt="A favorite photo">
+<img src="images/photo4.jpg" alt="A favorite memory">
+<img src="images/photo5.jpg" alt="A favorite memory">
+<img src="images/photo6.jpg" alt="A favorite memory">
+<img src="images/photo7.jpg" alt="A favorite memory">
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<div class="kicker">Things I should have remembered</div>
+<h2>You deserve...</h2>
+<div>
+<span class="reason">Respect 🤍</span>
+<span class="reason">Patience 🌷</span>
+<span class="reason">Honesty 🫶</span>
+<span class="reason">Reassurance 💗</span>
+<span class="reason">Effort ✨</span>
+<span class="reason">My best, not my excuses ❤️</span>
+</div>
+<p class="sub" style="margin-top:28px">And I'm sorry for the moments when I didn't give you those things.</p>
+</div>
+</section>
+
+<section>
+<div class="card question">
+<div class="kicker">Okay... last question</div>
+<h2>Will you forgive me? 🥺</h2>
+<p class="sub">You don't have to answer immediately. I just wanted you to know how much you mean to me.</p>
+<button class="btn" id="yesBtn" onclick="forgive()">Yes, you idiot ❤️</button>
+<button class="btn secondary" id="noBtn" onmouseenter="runAway()" ontouchstart="runAway()">No 😤</button>
+</div>
+</section>
+
+<section id="final">
+<div class="card">
+<div class="bigheart">❤️</div>
+<h2>Thank you.</h2>
+<p>I promise I'll keep trying to be better for us.</p>
+<p><b>I love you more than this little website can say.</b></p>
+<p>Now come here and give me a hug 🫂</p>
+</div>
+</section>
+
+<footer>Made with love, apologies, and a questionable amount of HTML ❤️</footer>
+
+<script>
+function showLetter(){
+  document.getElementById('letter').style.display='block';
+  burst();
+}
+function burst(){
+  for(let i=0;i<18;i++) setTimeout(()=>spawnHeart(),i*80);
+}
+function spawnHeart(){
+  const h=document.createElement('div'); h.className='heart';
+  h.textContent=['❤️','💗','💕','💖','🫶'][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+'vw'; h.style.fontSize=(16+Math.random()*25)+'px';
+  h.style.animationDuration=(4+Math.random()*5)+'s';
+  document.getElementById('hearts').appendChild(h);
+  setTimeout(()=>h.remove(),9000);
+}
+setInterval(()=>{if(Math.random()<.55)spawnHeart()},900);
+
+function runAway(){
+  const b=document.getElementById('noBtn');
+  const x=(Math.random()*240)-120, y=(Math.random()*130)-65;
+  b.style.transform=`translate(${x}px,${y}px)`;
+}
+function forgive(){
+  document.querySelector('.question').style.display='none';
+  document.getElementById('final').style.display='flex';
+  burst();
+  window.scrollTo({top:document.getElementById('final').offsetTop,behavior:'smooth'});
+}
+
+function toggleMusic(){
+  const audio=document.getElementById('music');
+  const btn=document.getElementById('musicBtn');
+  if(audio.paused){
+    const startAt=160; // 2:40
+    const startPlayback=()=>{
+      try { audio.currentTime=startAt; } catch(e) {}
+      const p=audio.play();
+      if(p){
+        p.then(()=>{ btn.textContent='❚❚ Pause Pluto Projector'; })
+         .catch(()=>{ btn.textContent='▶ Tap to Play Pluto Projector'; });
+      }
+    };
+    if(audio.readyState >= 1) startPlayback();
+    else audio.addEventListener('loadedmetadata', startPlayback, {once:true});
+  }
+  else {
+    audio.pause();
+    btn.textContent='♪ Play Pluto Projector — Rex Orange County';
+  }
+}
+
+document.getElementById('music').addEventListener('ended',()=>{
+  document.getElementById('musicBtn').textContent='♪ Play Pluto Projector — Rex Orange County';
+});
+</script>
+</body>
+</html>
